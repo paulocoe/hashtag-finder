@@ -1,0 +1,23 @@
+{
+  "name": "hashtag-finder",
+  "version": "1.0.0",
+  "description": "App to search for photos with a given hashtag and store the result for later review",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulocoe/hashtag-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulocoe/hashtag-finder/issues"
+  },
+  "homepage": "https://github.com/paulocoe/hashtag-finder#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
