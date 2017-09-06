@@ -4,6 +4,9 @@
   "description": "App to search for photos with a given hashtag and store the result for later review",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon app.js",
+    "lint": "standard",
+    "lint-fix" : "standard --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +21,11 @@
   },
   "homepage": "https://github.com/paulocoe/hashtag-finder#readme",
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "pug": "^2.0.0-rc.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.0",
+    "standard": "^10.0.3"
   }
 }
