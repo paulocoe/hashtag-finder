@@ -10,5 +10,6 @@ router.get('/handleAuth', ctrlAuth.handleAuth)
 
 // hashtag pages
 router.get('/', ctrlHashtag.index)
+router.get('/home', ctrlHashtag.homelist)
 
 module.exports = router

@@ -8,6 +8,9 @@ var IN_AUTH_URL = 'https://api.instagram.com/oauth/authorize/?client_id=' +
               IN_REDIRECT_URI + '&response_type=code'
 
 module.exports = {
+  db: {
+    uri: 'mongodb://localhost:27017/db'
+  },
   instagram: {
     client_id: IN_CLIENT_ID,
     client_secret: IN_CLIENT_SECRET,
