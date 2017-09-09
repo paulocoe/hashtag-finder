@@ -1,10 +1,9 @@
 'use strict'
 
 var httpRequest = require('request')
-
 var config = require('../../config/config')
 
-//POST on Instagram Oauth service in order to get the access_token from the user
+// POST on Instagram Oauth service in order to get the access_token from the user
 module.exports.auth = function (req, res) {
   var options = {
     url: 'https://api.instagram.com/oauth/access_token',
@@ -21,19 +20,18 @@ module.exports.auth = function (req, res) {
   httpRequest(options, function (error, response, body) {
     if (!error && response.statusCode === 200) {
       var user = JSON.parse(body)
+      res.cookie('access_token', user.access_token)
       res.redirect(('/handleAuth'))
-    }
-    else res.send(error)
-   })
+    } else res.send(error)
+  })
 }
 
 // GET 'Login' page from Instagram
-module.exports.login = function(req, res){
-   res.redirect(config.instagram.auth_url)
+module.exports.login = function (req, res) {
+  res.redirect(config.instagram.auth_url)
 }
 
 // GET handleAuth after oAuth authentication were made
-module.exports.handleAuth = function(req, res) {
-   res.render('test', { title: 'Welcome', message: 'Feel free to browse any hashtag you like' })
+module.exports.handleAuth = function (req, res) {
+  res.render('test', { title: 'Welcome', message: 'Feel free to browse any hashtag you like' })
 }
-
