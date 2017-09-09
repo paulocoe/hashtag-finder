@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/paulocoe/hashtag-finder#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.3",
     "express": "^4.15.4",
     "mongoose": "^4.11.10",
     "pug": "^2.0.0-rc.3",
