@@ -1,5 +1,6 @@
 var mongoose = require('mongoose')
 
+// hashtag Schema
 var hashtagSchema = mongoose.Schema({
   name: { type: String, required: true },
   photos: { type: [String],
