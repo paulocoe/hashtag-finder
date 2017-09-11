@@ -10,7 +10,7 @@ var bodyParser = require('body-parser')
 app.set('views', path.join(__dirname, 'app_server', 'views'))
 app.set('view engine', 'pug')
 app.use(cookieParser())
-app.use(bodyParser.json)
+app.use(bodyParser.json())
 
 app.use(express.static(path.join(__dirname, 'public')))
 
