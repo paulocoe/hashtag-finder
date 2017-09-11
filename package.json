@@ -1,0 +1,45 @@
+{
+  "name": "hashtag-finder",
+  "version": "1.0.0",
+  "description": "App to search for photos with a given hashtag and store the result for later review",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "test": "mocha \"tests/**/*.js\"",
+    "build": "npm run lint && npm test"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "expect"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulocoe/hashtag-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulocoe/hashtag-finder/issues"
+  },
+  "homepage": "https://github.com/paulocoe/hashtag-finder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.4",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.11.10",
+    "pug": "^2.0.0-rc.3",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "nodemon": "^1.12.0",
+    "standard": "^10.0.3"
+  }
+}
